@@ -1,4 +1,4 @@
-##My-Portfolio
+## My-Portfolio
 
 Welcome to my portfolio repository. This repository contains a collection of my projects, demonstrating my skills and expertise in data analysis, data visualization, machine learning, and software development.
 
@@ -7,7 +7,7 @@ Welcome to my portfolio repository. This repository contains a collection of my 
 - [Overview](#overview)
 - [Projects](#projects)
 - [Technologies Used](#technologies-used)
-- [How to Use](#how-to-use)
+- [Experience](#Experience)
 - [Contact](#contact)
 
 ## Overview
