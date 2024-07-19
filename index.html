@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/950f051608.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/Preview.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><b>Data Engineer</b></p>
+                <h1>Hey There, I am<br><span id="name"></span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/Aj.jpg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am an experienced Big Data Developer and Quality Assurance Analyst with over 3 years of expertise in large-scale data processing, real-time analytics, and quality assurance. I have honed my skills in utilizing Spark, Hive, Sqoop, and Hadoop ecosystems to optimize data flow and develop robust frameworks for real-time data ingestion. My proficiency extends to CI/CD pipeline development using Jenkins, creating comprehensive test strategies, and conducting end-to-end testing with Ab Initio. I am known for my strong problem-solving abilities, commitment to quality, and a track record of delivering high-quality results in deadline-driven environments.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br> Python,Shell Scripting, Scala, Hadoop ecosystems</li>
+                            <li><span>ETL Tools</span><br> Ab Initio, RLM, Jenkins, Autosys, HP ALM</li>
+                            <li><span>Querying Tools</span><br> SQL, Teradata, MySQL, PL/SQL</li>
+                            <li><span>Web Technologies</span><br> Html, CSS, JS</li>
+                            <li><span>Data Management</span><br> Data lakes, Dashboard, Git, BitBucket, Sharepoint</li>
+                            <li><span>Communication & Collaboration</span><br> Jira, Zoom, Ms Teams, Webex</li>
+                            <li><span>Other</span><br> VsCode, Eclipse, Linux</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>SEP 2022 - Present</span><br><b>OMNI Channel Specialist - Best Buy - Canada</b>
+                                <p>Responsible for managing and optimizing customer experience ensuring seamless integration across online and in-store platforms.</p>
+                            </li>
+                            <li><span>JAN 2021 - AUG 2022</span><br><b> System Engineer - Tata Consultancy Services - India </b>
+                                <p>Developed and enhanced a real-time data ingestion framework using Sqoop to process data from Oracle databases into Hive.</p>
+                                <p>Built CI/CD pipelines with Jenkins for thorough testing before production.</p>
+                            </li>
+                            <li><span>JUL 2019 - DEC 2020</span><br> <b>Assistant System Engineer - Tata Consultancy Services - India</b>
+                            <p>Created and executed comprehensive test plans, strategies, and test cases, effectively validating and documenting test results for each project.</p>
+                            <p>Performed end-to-end testing using Ab Initio and managed defect resolution in HP ALM, ensuring high-quality deliverables and smooth project execution.</p>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SEP 2022 - APR 2024</span><br> Master of Science - Computer Science
+                            <p>Lakehead University</p>
+                            <p>Honours</p>
+                            </li>
+                            <li><span>AUG 2015 - MAY 2019</span><br> Bachelor of Engineering - Computer Science and Engineering
+                            <p>Prince College - Anna University</p>
+                            <p>Honours</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title"> My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/Check_Image-4.jpeg"/>
+                    <div class="layer">
+                        <h4>Bridging the Void: A GAN-NET for Point cloud Completion</h4>
+                        <p>3D Point cloud Completion using GAN architecture for three different datasets</p>
+                        <a href="https://github.com/Archana-Jay/Project"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/Check_Image-1.jpeg"/>
+                    <div class="layer">
+                        <h4> Computer Vision and Image Analysis</h4>
+                        <p>Replication of Bringing Vision to the Blind: From Coarse to Fine, One Dollar at a Time</p>
+                        <a href="https://github.com/Archana-Jay/Computer-Vision-and-Image-Analysis"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/Check_Image-3.jpeg"/>
+                    <div class="layer">
+                        <h4>Cloud Computing</h4>
+                        <p>Generating Human like Textual descriptions for images using ResNet Model</p>
+                        <a href="https://github.com/Archana-Jay/Cloud-Computing-for-ML-AI"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="./assets/Check_Image-6.jpeg"/>
+                    <div class="layer">
+                        <h4>Deep Learning</h4>
+                        <p>Image classification Image Recognition using DCNN</p>
+                        <a href="https://github.com/Archana-Jay/Deep-Learning"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="./assets/Check_Image-5.jpeg"/>
+                    <div class="layer">
+                        <h4>Software Engineering</h4>
+                        <p>An approach to identify unanswered question in Stack overflow dataset</p>
+                        <a href="https://github.com/Archana-Jay/Topics-In-Software-Engineering"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="./assets/Check_Image-2.jpeg"/>
+                    <div class="layer">
+                        <h4>Tableau Data Analysis</h4>
+                        <p>Exploratory Data Analysis(EDA) for Netflix Dataset</p>
+                        <a href="https://github.com/Archana-Jay/Netflix-Exploratory-Data-Analysis"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="./assets/Check_Image-7.jpeg"/>
+                    <div class="layer">
+                        <h4>Ethical Issues on Health care Data Analysis</h4>
+                        <p>MineHealth is a project to enhancing data accuracy and interoperability in healthcare.</p>
+                        <a href="https://github.com/Archana-Jay/Ethical-Issues-in-Health-Care"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="see-more-btn" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="container2">
+            <div class="row2">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ajayaram@lakeheadu.ca</p>
+                    <p><i class="fa-solid fa-phone"></i>+1(807)3555719</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/archana-jayaraman-b81165233/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Archana-Jay"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="./assets/Archana_Jayaraman_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Archana Jayaraman. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+    
+    
+</body>
+</html>
